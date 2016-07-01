@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF28BC0F1D23BAF50059DCC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28BC0E1D23BAF50059DCC3 /* main.m */; };
+		EF28BC121D23BAF50059DCC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28BC111D23BAF50059DCC3 /* AppDelegate.m */; };
+		EF28BC151D23BAF50059DCC3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28BC141D23BAF50059DCC3 /* LoginViewController.m */; };
+		EF28BC181D23BAF50059DCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF28BC161D23BAF50059DCC3 /* Main.storyboard */; };
+		EF28BC1A1D23BAF50059DCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF28BC191D23BAF50059DCC3 /* Assets.xcassets */; };
+		EF28BC1D1D23BAF50059DCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF28BC1B1D23BAF50059DCC3 /* LaunchScreen.storyboard */; };
+		EF28BC271D23BC670059DCC3 /* IGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28BC261D23BC670059DCC3 /* IGManager.m */; };
+		EF28BC2B1D23BCF00059DCC3 /* IGBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28BC2A1D23BCF00059DCC3 /* IGBaseService.m */; };
+		EF28BC2F1D23BF200059DCC3 /* IGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28BC2E1D23BF200059DCC3 /* IGUser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF1534E31D2526C90088B173 /* IGSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IGSDK.h; path = InstaSDK/IGSDK.h; sourceTree = "<group>"; };
+		EF28BC0A1D23BAF50059DCC3 /* InstagramSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF28BC0E1D23BAF50059DCC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF28BC101D23BAF50059DCC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF28BC111D23BAF50059DCC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF28BC131D23BAF50059DCC3 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EF28BC141D23BAF50059DCC3 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EF28BC171D23BAF50059DCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF28BC191D23BAF50059DCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF28BC1C1D23BAF50059DCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF28BC1E1D23BAF50059DCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF28BC251D23BC670059DCC3 /* IGManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGManager.h; path = InstaSDK/IGManager/IGManager.h; sourceTree = "<group>"; };
+		EF28BC261D23BC670059DCC3 /* IGManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGManager.m; path = InstaSDK/IGManager/IGManager.m; sourceTree = "<group>"; };
+		EF28BC291D23BCF00059DCC3 /* IGBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGBaseService.h; path = InstaSDK/IGManager/IGBaseService.h; sourceTree = "<group>"; };
+		EF28BC2A1D23BCF00059DCC3 /* IGBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGBaseService.m; path = InstaSDK/IGManager/IGBaseService.m; sourceTree = "<group>"; };
+		EF28BC2D1D23BF200059DCC3 /* IGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUser.h; path = InstaSDK/IGUser/IGUser.h; sourceTree = "<group>"; };
+		EF28BC2E1D23BF200059DCC3 /* IGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUser.m; path = InstaSDK/IGUser/IGUser.m; sourceTree = "<group>"; };
+		EF28BC311D23ED550059DCC3 /* IGConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IGConstants.h; path = InstaSDK/IGConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF28BC071D23BAF50059DCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF28BC011D23BAF50059DCC3 = {
+			isa = PBXGroup;
+			children = (
+				EF28BC0C1D23BAF50059DCC3 /* InstagramSDKDemo */,
+				EF28BC0B1D23BAF50059DCC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF28BC0B1D23BAF50059DCC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF28BC0A1D23BAF50059DCC3 /* InstagramSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF28BC0C1D23BAF50059DCC3 /* InstagramSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EF28BC241D23BB520059DCC3 /* InstaSDK */,
+				EF28BC101D23BAF50059DCC3 /* AppDelegate.h */,
+				EF28BC111D23BAF50059DCC3 /* AppDelegate.m */,
+				EF28BC131D23BAF50059DCC3 /* LoginViewController.h */,
+				EF28BC141D23BAF50059DCC3 /* LoginViewController.m */,
+				EF28BC161D23BAF50059DCC3 /* Main.storyboard */,
+				EF28BC191D23BAF50059DCC3 /* Assets.xcassets */,
+				EF28BC1B1D23BAF50059DCC3 /* LaunchScreen.storyboard */,
+				EF28BC1E1D23BAF50059DCC3 /* Info.plist */,
+				EF28BC0D1D23BAF50059DCC3 /* Supporting Files */,
+			);
+			path = InstagramSDKDemo;
+			sourceTree = "<group>";
+		};
+		EF28BC0D1D23BAF50059DCC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF28BC0E1D23BAF50059DCC3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF28BC241D23BB520059DCC3 /* InstaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EF28BC2C1D23BEB10059DCC3 /* IGUser */,
+				EF28BC281D23BC990059DCC3 /* IGManager */,
+				EF28BC311D23ED550059DCC3 /* IGConstants.h */,
+				EF1534E31D2526C90088B173 /* IGSDK.h */,
+			);
+			name = InstaSDK;
+			sourceTree = "<group>";
+		};
+		EF28BC281D23BC990059DCC3 /* IGManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF28BC251D23BC670059DCC3 /* IGManager.h */,
+				EF28BC261D23BC670059DCC3 /* IGManager.m */,
+				EF28BC291D23BCF00059DCC3 /* IGBaseService.h */,
+				EF28BC2A1D23BCF00059DCC3 /* IGBaseService.m */,
+			);
+			name = IGManager;
+			sourceTree = "<group>";
+		};
+		EF28BC2C1D23BEB10059DCC3 /* IGUser */ = {
+			isa = PBXGroup;
+			children = (
+				EF28BC2D1D23BF200059DCC3 /* IGUser.h */,
+				EF28BC2E1D23BF200059DCC3 /* IGUser.m */,
+			);
+			name = IGUser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF28BC091D23BAF50059DCC3 /* InstagramSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF28BC211D23BAF50059DCC3 /* Build configuration list for PBXNativeTarget "InstagramSDKDemo" */;
+			buildPhases = (
+				EF28BC061D23BAF50059DCC3 /* Sources */,
+				EF28BC071D23BAF50059DCC3 /* Frameworks */,
+				EF28BC081D23BAF50059DCC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstagramSDKDemo;
+			productName = InstagramSDKDemo;
+			productReference = EF28BC0A1D23BAF50059DCC3 /* InstagramSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF28BC021D23BAF50059DCC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Gevorg Ghukasyan";
+				TargetAttributes = {
+					EF28BC091D23BAF50059DCC3 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = EF28BC051D23BAF50059DCC3 /* Build configuration list for PBXProject "InstagramSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF28BC011D23BAF50059DCC3;
+			productRefGroup = EF28BC0B1D23BAF50059DCC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF28BC091D23BAF50059DCC3 /* InstagramSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF28BC081D23BAF50059DCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF28BC1D1D23BAF50059DCC3 /* LaunchScreen.storyboard in Resources */,
+				EF28BC1A1D23BAF50059DCC3 /* Assets.xcassets in Resources */,
+				EF28BC181D23BAF50059DCC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF28BC061D23BAF50059DCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF28BC151D23BAF50059DCC3 /* LoginViewController.m in Sources */,
+				EF28BC271D23BC670059DCC3 /* IGManager.m in Sources */,
+				EF28BC121D23BAF50059DCC3 /* AppDelegate.m in Sources */,
+				EF28BC0F1D23BAF50059DCC3 /* main.m in Sources */,
+				EF28BC2F1D23BF200059DCC3 /* IGUser.m in Sources */,
+				EF28BC2B1D23BCF00059DCC3 /* IGBaseService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF28BC161D23BAF50059DCC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF28BC171D23BAF50059DCC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF28BC1B1D23BAF50059DCC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF28BC1C1D23BAF50059DCC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF28BC1F1D23BAF50059DCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF28BC201D23BAF50059DCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF28BC221D23BAF50059DCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstagramSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Inomma.InstagramSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF28BC231D23BAF50059DCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstagramSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Inomma.InstagramSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF28BC051D23BAF50059DCC3 /* Build configuration list for PBXProject "InstagramSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF28BC1F1D23BAF50059DCC3 /* Debug */,
+				EF28BC201D23BAF50059DCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF28BC211D23BAF50059DCC3 /* Build configuration list for PBXNativeTarget "InstagramSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF28BC221D23BAF50059DCC3 /* Debug */,
+				EF28BC231D23BAF50059DCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF28BC021D23BAF50059DCC3 /* Project object */;
+}
