@@ -63,17 +63,9 @@ static NSString *const IG_SIG_KEY = @"55e91155636eaa89ba5ed619eb4645a4daf1103f21
     NSString *eqperiments = @"ig_nonfb_sso_universe,ig_ios_multiple_accounts_badging_universe,ig_ios_disk_analytics,enable_nux_language,ig_ios_password_less_registration_universe,ig_ios_white_camera_dogfooding_universe,ig_ios_one_click_login_universe_2,ig_ios_whiteout_dogfooding,ig_ios_one_password_extension,ig_ios_registration_phone_default_universe,ig_ios_branding_refresh,ig_ios_whiteout_kill_switch,ig_ios_analytics_compress_file,ig_ios_one_click_login_tab_design_universe,ig_ios_use_family_device_id_universe,ig_ios_registration_robo_call_time";
     
     NSDictionary *dic = @{
-                          @"id": uniqueIdentifier,
-                          @"experiments" : eqperiments
+                          @"experiments" : eqperiments,
+                          @"id": uniqueIdentifier
                           };
-    
-//    NSData *dicData;
-//    NSError *error;
-//    dicData = [NSJSONSerialization dataWithJSONObject:dic options:0 error:&error];
-//    if (error) {
-//            
-//        NSLog(@"error parse :: %@", error);
-//    }
     
 
     NSString *signed_body = [self encodePostParameters:dic];
@@ -86,27 +78,14 @@ static NSString *const IG_SIG_KEY = @"55e91155636eaa89ba5ed619eb4645a4daf1103f21
                               @"signed_body" : [NSString stringWithFormat:@"%@.%@", hmac, signed_body]
                               };
     
-    
     NSString *requestString = [self encodePostParameters:params];
-    
-    NSData *requestData = [requestString dataUsingEncoding:NSUTF8StringEncoding];
-
-    
-    NSLog(@"%@", requestString);
-    
-    
-    NSString *strTest = @"ig_sig_key_version=5&signed_body=%@.{\"id\":\"%@\",\"experiments\":\"ig_nonfb_sso_universe,ig_ios_multiple_accounts_badging_universe,ig_ios_disk_analytics,enable_nux_language,ig_ios_password_less_registration_universe,ig_ios_white_camera_dogfooding_universe,ig_ios_one_click_login_universe_2,ig_ios_whiteout_dogfooding,ig_ios_one_password_extension,ig_ios_registration_phone_default_universe,ig_ios_branding_refresh,ig_ios_whiteout_kill_switch,ig_ios_analytics_compress_file,ig_ios_one_click_login_tab_design_universe,ig_ios_use_family_device_id_universe,ig_ios_registration_robo_call_time\"}";
-    
-    
-    NSString *finalStr = [NSString stringWithFormat:strTest, hmac, uniqueIdentifier];
-    [finalStr dataUsingEncoding:NSUTF8StringEncoding];
 
     NSString *urlSting = [NSString stringWithFormat:kBaseServerUrl, kSyncEndpoint];
     
     NSString *cookieString;// = @"mid=Vk9YawAAAAEDMq9a-O0OtNCuZ58o";
     
     [self makeRequestWithUrl:urlSting
-              withParamsData:[finalStr dataUsingEncoding:NSUTF8StringEncoding]
+              withParamsData:[requestString dataUsingEncoding:NSUTF8StringEncoding]
                  requestType:IGRequestTypePost
                 cookieString:cookieString
                   completion:completion];
@@ -146,6 +125,11 @@ static NSString *const IG_SIG_KEY = @"55e91155636eaa89ba5ed619eb4645a4daf1103f21
 //        [request setValue:cookies forHTTPHeaderField:@"Cookie"];
     }
     [request addValue:@"application/x-www-form-urlencoded; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"gzip, deflate" forHTTPHeaderField:@"Accept-Encoding"];
+    [request setValue:@"3w==" forHTTPHeaderField:@"X-IG-Capabilities"];
+    [request setValue:@"WiFi" forHTTPHeaderField:@"X-IG-Connection-Type"];
+    [request setValue:@"Instagram 8.3.0" forHTTPHeaderField:@"User-Agent"];
+
     [request addValue:@"*/*" forHTTPHeaderField:@"Accept"];
     
     
@@ -278,8 +262,8 @@ static NSString *const IG_SIG_KEY = @"55e91155636eaa89ba5ed619eb4645a4daf1103f21
 
 - (NSString *)percentEscapeString:(NSString *)string
 {
-    NSString *encodedURL = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    return encodedURL;
+    
+//    NSString *encodedURL = [string stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                      (CFStringRef)string,
